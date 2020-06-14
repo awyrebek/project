@@ -5,6 +5,10 @@
             <sec:authorize access="hasRole('ROLE_ADMIN')">
                 <a href="/admin"><s:message code="menu.adminPage"/></a>
             </sec:authorize>
+            <a href="/dish"><s:message code="menu.dish"/></a>
+            <sec:authorize access="isAuthenticated()">
+                <a href="/addDish"><s:message code="menu.addDish"/></a>
+            </sec:authorize>
         </td>
         <td align="right">
             <sec:authorize access="hasRole('ANONYMOUS')">

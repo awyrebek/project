@@ -14,4 +14,11 @@ public class MainPageController
 	{
 		return "index";
 	}
+
+	@GET
+	@RequestMapping(value = {"/profil"})
+	public String showProfil()
+	{
+		return "profil";
+	}
 }
